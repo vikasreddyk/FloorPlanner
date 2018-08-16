@@ -1,0 +1,8 @@
+<div #parent class="resize-container">
+    <div class="resize-drag" *ngFor="let rect of rectData.rects">
+        <img src="../../assets/img/close.svg" class="rect-close" (click)="deleteRect(rect.id)"/>
+    </div>
+    <div class="floor-plan-image" [style.backgroundImage]="floorPlanBg">
+
+    </div>
+</div>

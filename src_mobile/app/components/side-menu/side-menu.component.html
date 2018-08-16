@@ -1,0 +1,39 @@
+<div class="menu-container-desktop">
+    <div class="menu-title">Floor Plan</div>
+    <div class="menu-content">
+        <div class="file-picker-container">
+                <label for="upload-floor-plan" class="file-picker-label">
+                    Upload Floor Plan
+                    <img src="../../assets/img/upload-button.svg"/>
+                </label>
+                <input class="file-picker" type="file" name="photo" id="upload-floor-plan" />
+        </div>
+        <div class="menu-text">Add new rooms to create custom floor plan</div>
+        <div class="menu-button-container">
+            <button mat-raised-button color="primary" (click)="save()">Save</button>
+        </div>
+        <div class="menu-button-container">
+            <button mat-raised-button color="warn" (click)="reset()">Reset</button>
+        </div>
+        <div class="menu-options-container">
+                <button mat-raised-button (click)="addRect()" class="menu-option-button">
+                    Add new Room
+                    <img src="../../assets/img/right-arrow.svg"/>
+                </button>
+        </div>
+    </div>
+</div>
+<div class="menu-container-mobile">
+    <div class="mobile-title">Floor Plan</div>
+    <div class="mobile-title">----------------- Mobiles horzontal scroll here --------------------</div>
+    <div >
+            <button mat-raised-button color="primary" (click)="save()">Save</button>
+            <button mat-raised-button color="warn" (click)="reset()">Reset</button>
+            <button mat-raised-button (click)="addRect()" class="mobile-option-button">
+                    Add new Room
+                    <img src="../../assets/img/right-arrow.svg"/>
+                </button>
+    </div>
+    
+    
+</div>

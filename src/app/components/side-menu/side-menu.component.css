@@ -1,0 +1,120 @@
+.menu-container-desktop
+{
+    position: fixed;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 15px #555555;
+    width: 200px;
+    z-index: 1;
+}
+.menu-title
+{
+    width: 100%;
+    border-left: 7px solid white;
+    background-color: #dddddd;
+    color: #333333;
+    padding: 15px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+.menu-content
+{
+    height: 60%;
+    width:100%;
+    box-sizing: border-box;
+    border-left:7px solid #d84f00;
+}
+.menu-button-container
+{
+    width: 100%;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+.menu-options-container
+{
+  width: 100%;
+  padding-top: 0.5rem;
+}
+.menu-option-button
+{
+    width:100%;
+    text-align: left;
+    font-weight: bold;
+    color: #555555;
+}
+.menu-option-button img{
+    width: 15px;
+    float: right;
+    margin-top: 0.6rem;
+}
+.menu-text
+{
+    color: #555555;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    margin-left: 1.1rem;
+
+}
+.file-picker-label {
+    cursor: pointer;
+    border: 1px solid #999999;
+    padding: 10px;
+    border-radius: 5px;
+ }
+ 
+.file-picker {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.file-picker-container{
+    width: 100%;
+    padding: 1.5rem 0 1rem 1.6rem;
+
+}
+
+.file-picker-label img {
+    width: 15px;
+    margin-left: 0.2rem;
+    cursor: pointer;
+ }
+ .menu-container-mobile{
+     position: fixed;
+     top:0;
+     height: 100px;
+     width: 100%;
+     background: rgba(225,225,225,0.7)
+ }
+ .mobile-title
+ {
+     width: 100%;
+     text-align: center;
+     font-size: 1rem;
+     padding: 10px;
+ }
+ .mobile-option-button img{
+    width: 15px;
+    float: right;
+    margin-top: 0.6rem;
+}
+ @media only screen and (max-width: 600px) {
+    .menu-container-desktop{
+        display: none;
+        width: 0;
+    }
+    .menu-container-mobile{
+        display: block;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .menu-container-desktop{
+        display: block;
+        width: 200px;
+    }
+    .menu-container-mobile{
+        display: none;
+    }
+}
